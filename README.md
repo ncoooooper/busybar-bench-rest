@@ -4,6 +4,20 @@ Log sets, working weight, repetitions and actual recovery time with desk control
 
 Keep the set record and rest clock on one control. You can check what you lifted last time without guessing whether the recovery period was thirty seconds or two minutes.
 
+## Screen transitions
+
+Log the set, then return to its weight and rep count during the rest.
+
+![Bench Rest front display. Log the set, then return to its weight and rep count during the rest.](media/guide/screen-transitions.gif)
+
+<details>
+
+<summary>Watch the rear display</summary>
+
+![Bench Rest rear display during the recorded controls](media/guide/screen-transitions-rear.gif)
+
+</details>
+
 ## Log a completed set
 
 1. Turn the wheel to set your working weight in 2.5 kg increments. Press **Start** to switch to reps, then turn to the count you actually completed.
@@ -34,6 +48,6 @@ Open BUSY Bar Emulator. From this repository, run:
 
 Press **Back** to exit.
 
-The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+The GIFs are excerpts from the emulator recording. Each LED occupies a 16 × 16 cell with a black border. The end frames pause for reading.
 
 [Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
