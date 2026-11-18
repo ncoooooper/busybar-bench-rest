@@ -2,10 +2,38 @@
 
 Log sets, working weight, repetitions and actual recovery time with desk controls.
 
-In setup, turn to change weight by 2.5 kg. Start switches the wheel between weight and reps. Click logs a set and starts its rest timer. Click again ends the rest and returns to setup. Hold the wheel to browse the last 20 sets. In history turn to browse, click to leave.
+Keep the set record and rest clock on one control. You can check what you lifted last time without guessing whether the recovery period was thirty seconds or two minutes.
 
-## Run locally
+## Log a completed set
 
-From this folder, run `~/.busy-emulator/bin/busy-emulator dev --once` with BUSY Bar Emulator open. Back exits.
+1. Turn the wheel to set your working weight in 2.5 kg increments. Press **Start** to switch to reps, then turn to the count you actually completed.
+2. Click after the set. Bench Rest saves weight and reps together and starts the **Rest** timer.
+3. The recording starts in set history and returns to a nine-rep setup before the rest clock opens.
 
-![BUSY Bar front display](screenshots/front-1.png)
+![The stored set gives way to nine reps and then the rest timer.](media/guide/log-and-start-rest.gif)
+
+## Review the last set
+
+1. Click to end the rest when you are ready for the next set. The duration is attached to the set you just finished.
+2. Hold the wheel for **Set history**. Turn to browse the last 20 entries. The rear shows the selected entry’s recorded rest.
+3. Click to leave history. The clip shows the rest timer giving way to a stored 22.5 kg set of nine.
+
+![The rest timer gives way to the stored set labeled 22.5x9.](media/guide/review-working-set.gif)
+
+## Example from the emulator
+
+If you log 22.5 kg for nine reps and end the rest at 1:15, that entry records those nine reps with 75 seconds of rest. The on-screen interval in the demonstration is short because the controls were pressed in quick succession.
+
+## Run in the emulator
+
+Open BUSY Bar Emulator. From this repository, run:
+
+```sh
+~/.busy-emulator/bin/busy-emulator dev --once
+```
+
+Press **Back** to exit.
+
+The GIFs are excerpts from the emulator recording. Each front-display pixel is shown at 9× its original width and height. The end frames pause for reading.
+
+[Full recording](media/controls.mp4) · [Rear display](screenshots/back-1.png) · [Firmware test](EMULATOR-QA.md) · [MIT license](LICENSE)
