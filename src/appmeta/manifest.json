@@ -4,6 +4,6 @@
   "name": "Bench Rest",
   "version": "0.1.0",
   "api_version": "27.12.0",
-  "description": "Bench Rest",
+  "description": "Log sets, working weight, repetitions and actual recovery time with desk controls.",
   "author": "ncoooooper"
 }
