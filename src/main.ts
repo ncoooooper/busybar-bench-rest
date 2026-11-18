@@ -1,7 +1,7 @@
 import {desk,duration} from "@shared/desk";
 import {wrap} from "@shared/surface";
 type SetEntry={kg:number;reps:number;rest:number};type S={kg:number;reps:number;editReps:boolean;since:number;sets:SetEntry[];browse:boolean;idx:number};
-desk<S>({name:"Bench Rest",accent:"#B695F0",motion:{"motif":"cells","color":"#B695F0","shine":"#F8E8FF"},initial:()=>({kg:20,reps:8,editReps:false,since:0,sets:[],browse:false,idx:0}),
+desk<S>({name:"Bench Rest",accent:"#B695F0",motion:{enabled:false},initial:()=>({kg:20,reps:8,editReps:false,since:0,sets:[],browse:false,idx:0}),
  render:(s,now)=>{const entry=s.sets[s.idx];return {title:s.browse?"Set history":s.since?"Rest":s.editReps?"Reps":"Working weight",
  value:s.browse&&entry?entry.kg+"x"+entry.reps:s.since?duration(now-s.since):s.editReps?String(s.reps):s.kg+" kg",
  lines:["Set "+(s.browse?s.idx+1:s.sets.length+1),"Load "+s.kg+" kg / "+s.reps+" reps",entry?"Recorded rest "+duration(entry.rest):"No sets logged",
